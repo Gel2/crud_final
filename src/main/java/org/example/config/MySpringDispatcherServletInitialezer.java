@@ -6,7 +6,7 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 
-public class AppInit extends AbstractAnnotationConfigDispatcherServletInitializer {
+public class MySpringDispatcherServletInitialezer extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
     protected Class<?>[] getRootConfigClasses() {
         return new Class[0];
@@ -14,7 +14,7 @@ public class AppInit extends AbstractAnnotationConfigDispatcherServletInitialize
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[] {DataBaseConfig.class};
+        return new Class[] {SpringConfig.class};
     }
 
     @Override
