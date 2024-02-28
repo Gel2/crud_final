@@ -68,6 +68,9 @@ public class SpringConfig implements WebMvcConfigurer {
         registry.viewResolver(resolver);
     }
 
+
+
+
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
@@ -99,6 +102,7 @@ public class SpringConfig implements WebMvcConfigurer {
         entityManagerFactory.setPersistenceProviderClass(org.hibernate.jpa.HibernatePersistenceProvider.class);
 
         return entityManagerFactory;
+
     }
 
     @Bean
